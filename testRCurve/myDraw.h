@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  myDraw.h
 //  testRCurve
 //
 //  Created by andrew hazlett on 8/27/16.
@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
-@end
+@interface myDraw : NSView
 
+@property (retain) NSMutableArray  * myMutaryOfPoints;
+
+
+@end

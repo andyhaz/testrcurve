@@ -14,6 +14,8 @@
 		970FA4F61D72BC40009EADAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970FA4F41D72BC40009EADAB /* Main.storyboard */; };
 		970FA5011D72BC40009EADAB /* testRCurveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FA5001D72BC40009EADAB /* testRCurveTests.m */; };
 		970FA50C1D72BC40009EADAB /* testRCurveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FA50B1D72BC40009EADAB /* testRCurveUITests.m */; };
+		970FA51B1D72BC74009EADAB /* myDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FA51A1D72BC74009EADAB /* myDraw.m */; };
+		970FA51E1D72BE82009EADAB /* myPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FA51D1D72BE82009EADAB /* myPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		970FA5071D72BC40009EADAB /* testRCurveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testRCurveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		970FA50B1D72BC40009EADAB /* testRCurveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testRCurveUITests.m; sourceTree = "<group>"; };
 		970FA50D1D72BC40009EADAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		970FA5191D72BC74009EADAB /* myDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDraw.h; sourceTree = "<group>"; };
+		970FA51A1D72BC74009EADAB /* myDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myDraw.m; sourceTree = "<group>"; };
+		970FA51C1D72BE82009EADAB /* myPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myPoint.h; sourceTree = "<group>"; };
+		970FA51D1D72BE82009EADAB /* myPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				970FA4F01D72BC3F009EADAB /* ViewController.m */,
 				970FA4F21D72BC3F009EADAB /* Assets.xcassets */,
 				970FA4F41D72BC40009EADAB /* Main.storyboard */,
+				970FA5191D72BC74009EADAB /* myDraw.h */,
+				970FA51A1D72BC74009EADAB /* myDraw.m */,
+				970FA51C1D72BE82009EADAB /* myPoint.h */,
+				970FA51D1D72BE82009EADAB /* myPoint.m */,
 				970FA4F71D72BC40009EADAB /* Info.plist */,
 				970FA4EC1D72BC3F009EADAB /* Supporting Files */,
 			);
@@ -204,6 +214,8 @@
 				TargetAttributes = {
 					970FA4E51D72BC3F009EADAB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7QPZTLEJ7L;
+						ProvisioningStyle = Manual;
 					};
 					970FA4FB1D72BC40009EADAB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -267,8 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				970FA4F11D72BC3F009EADAB /* ViewController.m in Sources */,
+				970FA51E1D72BE82009EADAB /* myPoint.m in Sources */,
 				970FA4EE1D72BC3F009EADAB /* main.m in Sources */,
 				970FA4EB1D72BC3F009EADAB /* AppDelegate.m in Sources */,
+				970FA51B1D72BC74009EADAB /* myDraw.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +414,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7QPZTLEJ7L;
 				INFOPLIST_FILE = testRCurve/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamerocketstudio.testRCurve;
@@ -412,7 +428,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7QPZTLEJ7L;
 				INFOPLIST_FILE = testRCurve/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamerocketstudio.testRCurve;
@@ -489,6 +507,7 @@
 				970FA5121D72BC40009EADAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		970FA5131D72BC40009EADAB /* Build configuration list for PBXNativeTarget "testRCurveTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +516,7 @@
 				970FA5151D72BC40009EADAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		970FA5161D72BC40009EADAB /* Build configuration list for PBXNativeTarget "testRCurveUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +525,7 @@
 				970FA5181D72BC40009EADAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
